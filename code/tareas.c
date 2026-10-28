@@ -15,7 +15,7 @@ int main(void)
         return 1;
     }
 
-    tareas_pendientes = tareas_iniciales + tareas_recibidas + tareas_completadas;
+    tareas_pendientes = tareas_iniciales + tareas_recibidas - tareas_completadas;
 
     printf("Tareas pendientes: %d\n", tareas_pendientes);
     return 0;
